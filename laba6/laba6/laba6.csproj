@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bold.png" />
+    <None Remove="folder.png" />
+    <None Remove="italic.png" />
+    <None Remove="save.png" />
+    <None Remove="underline.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bold.png" />
+    <Resource Include="folder.png" />
+    <Resource Include="italic.png" />
+    <Resource Include="save.png" />
+    <Resource Include="underline.png" />
+  </ItemGroup>
+
+</Project>
